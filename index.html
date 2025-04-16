@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ESCOBAR GARAGE</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1> ESCOBAR GARAGE SERVICES</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="service.html">Services</a></li>
+                <li><a href="parts.html">Parts</a></li>
+                <li><a href="appointment.html">Book Appointment</a></li>
+                <li><a href="payment.html">Payment</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>Welcome to Escobar Garage</h2><br>
+        <h3>Providing reliable, fast, and affordable vehicle repair services.</h3><br><br>
+        <img src="g1.png" style="width:1200px;height:700px;">
+        <br><br><h1>Welcome to ESCOBAR GARAGE</h1><br>
+    <h2>Expert Garage Services You Can Trust</h2><br>
+
+    <h3>
+       <strong> At ESCOBAR GARAGE, we provide top-quality garage services designed to keep your vehicle running smoothly and safely. 
+        With years of experience and a team of skilled mechanics, we are committed to delivering reliable, honest, and affordable auto repair and maintenance services.
+    </strong></h3><br>
+
+    <h3>Our Services Include:</h3>
+    <h3><ul style="font size:"24px">
+        <li>General vehicle servicing & inspections</li><br>
+        <li>Engine diagnostics & repairs</li><br>
+        <li>Brake & suspension work</li><br>
+        <li>Oil changes & fluid top-ups</li><br>
+        <li>Tire fitting, rotation, and balancing</li><br>
+        <li>Battery replacement & electrical checks</li><br>
+        <li>MOT preparation and checks</li><br>
+    </ul></h3><br><br><br>
+
+    <h2>
+        🛠️ <strong>YOUR CAR.OUR CARE.</strong><br><br><br></h2>
+        <h3>📍 Visit us today or book your appointment online for hassle-free garage service!
+        </h3>
+
+    </section>
+
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="service-list">
+            <div class="service-item">
+                <img src="service_image.jfif" alt="Service Image">
+                <h3>Oil Change</h3>
+                <p>Complete oil change services to keep your engine running smoothly.</p>
+            </div>
+            <div class="service-item">
+                <img src="tire.jfif" alt="Service Image">
+                <h3>Tire Replacement</h3>
+                <p>Get your tires replaced and ensure a safe drive on the road.</p>
+            </div>
+            <div class="service-item">
+                <img src="engine.jfif" alt="Service Image">
+                <h3>Engine Repair</h3>
+                <p>Our skilled technicians can diagnose and repair any engine issues.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="appointments">
+        <h2>Book an Appointment</h2>
+        <form id="appointment-form" action="save_appointment.php" method="POST">
+
+            <label for="service">Select Service:</label>
+            <select id="service" name="service" required>
+                <option value="Oil Change">Oil Change</option>
+                <option value="Tire Replacement">Tire Replacement</option>
+                <option value="Engine Repair">Engine Repair</option>
+                <option value="Brake System Service">Brake System Service</option>
+                <option value="Suspension and Steering Repairs">Suspension and Steering Repairs</option>
+                <option value="Battery and Electrical System Check">Battery and Electrical System Check</option>
+                <option value="Air Conditioning Service">Air Conditioning Service</option>
+                <option value="Exhaust System Repair">Exhaust System Repair</option>
+                <option value="MOT (Ministry of Transport) Preparation">MOT (Ministry of Transport) Preparation</option>
+                <option value="Clutch and Transmission Repair">Clutch and Transmission Repair</option>
+                <option value="Car Washing & Detailing">Car Washing & Detailing</option>
+
+            </select>
+
+            <label for="date">Preferred Date:</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="time">Preferred Time:</label>
+            <input type="time" id="time" name="time" required>
+
+            <label for="contact">Contact Information:</label>
+            <input type="text" id="contact" name="contact" placeholder="Phone Number" required>
+
+            <button type="submit">Book Appointment</button>
+        </form>
+        <div id="receipt-section" style="display:none; margin-top:20px;">
+            <button id="download-receipt">Download Receipt</button>
+        </div>
+    </section>
+
+    <section id="payment">
+
+        <h2>Payment Options</h2>
+        <p>We accept a variety of payment methods for your convenience.</p>
+        
+        <div class="payment-options">
+            <button id="google-pay-btn">
+                <img src="qr_code.png" alt="Google Pay QR Code" width="200" />
+                <p>Pay with Google Pay</p>
+            </button>
+        </div>
+    </section>
+    
+
+    <footer id="contact">
+        <p>&copy; 2025 Escobar Garage Services at kovai, contact info: 123-098-8987 , 342-124-4554. email:escogarage25@gmail.com</p>
+    </footer>
+</body>
+</html>
